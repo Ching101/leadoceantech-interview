@@ -1,0 +1,55 @@
+Linked List Merge K Lists - Setup and Running Instructions
+=====================================================
+
+Project Structure
+----------------
+- app.py              : Main implementation file with merge_k_lists function
+- list_node.py        : ListNode class definition
+- utils.py           : Helper functions for creating and printing linked lists
+- test_merge_lists.py : Test cases
+- reference.txt      : This file
+
+Requirements
+-----------
+Python 3.6 or higher is required for type hints support.
+
+No external libraries are required as this project uses only Python standard library.
+
+Running the Code
+--------------
+1. Make sure all files are in the same directory
+
+2. To run the tests:
+   ```bash
+   python test_merge_lists.py
+   ```
+
+3. To use the code in your own project:
+   ```python
+   from list_node import ListNode
+   from utils import create_linked_list, print_linked_list
+   from app import merge_k_lists
+
+   # Create test lists
+   list1 = create_linked_list([1, 4, 5])
+   list2 = create_linked_list([1, 3, 4])
+   
+   # Merge the lists
+   result = merge_k_lists([list1, list2])
+   
+   # Print the result
+   print(print_linked_list(result))
+   ```
+
+Expected Output
+-------------
+When running test_merge_lists.py, you should see:
+```
+Test 1: 1 -> 1 -> 2 -> 3 -> 4 -> 4 -> 5 -> 6
+Test 2: None
+Test 3: 1
+Test 4: 1 -> 2 -> 3
+```
+
+Note: The actual output will depend on the implementation of merge_k_lists function,
+which is left as a TODO for implementation. 
